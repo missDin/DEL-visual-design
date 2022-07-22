@@ -1,0 +1,137 @@
+.title{
+    display: flex;
+    margin-top: 3%;
+    margin-left:1.5%;
+    margin-right:1.5%;
+    border-bottom: solid #858585bc 1px;
+}
+.label{
+    margin-right: 50px;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+}
+.labeldel{
+    position: absolute;right:75px;top:28px;
+    font-family:sans-serif;
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+    font-size: 400%;
+    letter-spacing: 4px;
+}
+.blink{
+    margin-right: 50px;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1.2px;
+    animation: blink 2s infinite;
+}
+a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+}
+.topimg{
+    width: 105%;
+}
+.top{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-left: 18%;
+}
+.topic{
+    width: 45%;
+    height: 20%;
+    margin-right: 10%;
+    float: left;
+}
+.toptext{
+    margin-top: 150px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    line-height: 35px;
+    color: rgba(80, 80, 80, 0.932);
+    animation: fadin 1.2s;
+}
+.bottom{
+    margin: 15px;
+    margin-left: 45px;
+    flex-wrap: wrap;
+}
+.bpic{
+    width:30%;
+    margin: 20px;
+    border: solid #665f5f2c 1px;
+}
+ @keyframes blink{
+    0%{opacity:0.2}
+    50%{opacity:1}
+    100%{opacity:0.2}
+ }
+ @keyframes fadin{
+    0%{opacity:0;transform:translate(-60px,0);}
+    100%{opacity:1;transform: translate(0,0);}
+ }
+@media (max-width:1250px){
+    .label{
+        margin-right: 3.5%;
+        letter-spacing: 1px;
+        font-size: 1em;
+        height: 40px;
+    }
+    .labeldel{
+        position: absolute;right:20px;top:1%;
+        font-size: 350%;
+        margin-left: 6%;
+        letter-spacing: 4px;
+    }
+    .title{
+        margin-top: 30px;
+        margin-right: 18%;
+        flex-wrap:wrap;
+    }
+    .blink{
+        margin-right: 30px;
+        height: 45px;
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+    .topic{
+        margin-right: 6px;
+    }
+    .toptext{
+        margin-top: 17%;
+    }
+    .topimg{
+        width: 95%;
+    }
+    .bpic{
+        width:45%;
+        margin: 10px;
+    }
+}
+@media (max-width:500px){
+    .labeldel{
+        position: absolute;right:10px;top:6%;
+        font-size: 280%;
+        letter-spacing: 2px;
+    }
+    .topimg{
+        width: 62%;
+    }
+    .top{
+        margin-left: 5%;
+    }
+    .toptext{
+        display: none;
+    }
+    .bpic{
+        width:45%;
+        margin: 2px;
+        border: solid #665f5f7e 1px;
+    }
+}
