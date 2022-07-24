@@ -20,6 +20,12 @@
     font-size: 400%;
     letter-spacing: 4px;
 }
+.pc{
+    display: block;
+}
+.mobile{
+    display: none;
+}
 .blink{
     margin-right: 50px;
     height: 45px;
@@ -190,5 +196,11 @@ a{
     .intro{
         width: 80%;
         margin: 1.5% 16%;
+    }
+    .pc{
+        display: none;
+    }
+    .mobile{
+        display: block;
     }
 }
