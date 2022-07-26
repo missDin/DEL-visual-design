@@ -136,7 +136,40 @@ a{
     color: rgba(80, 80, 80, 0.932);
     animation: fadin 1.2s;
 }
-@keyframes blink{
+.loadbg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: rgba(255, 255, 255, 0.507);
+    z-index: 9999;
+}
+.load{
+    position: fixed;top:35%;left:44%;
+}
+.loadfont{
+    color: rgb(139, 139, 139);
+    font-family:sans-serif;
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+    letter-spacing: 1px;
+    animation: blink 1.2s infinite;
+    margin-left: 6px;
+}
+.loader{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    border:10px solid #d8d8d800;
+    border:10px solid rgb(139, 139, 139);
+    animation:load 1.2s linear infinite;
+}
+ @keyframes load{
+    0%{transform: scale(0.2);opacity: 0.5;}
+    100%{transform: scale(0.5);opacity: 0.8;}
+ }
+ @keyframes blink{
     0%{opacity:0.2}
     50%{opacity:1}
     100%{opacity:0.2}
