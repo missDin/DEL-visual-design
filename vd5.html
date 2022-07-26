@@ -6,7 +6,19 @@
             <title>DEL works</title>
             <link rel="stylesheet"type="text/css"href="vdn4.css"/>
         </head>
-        <body>
+        <script>
+            function test(){
+                    var t1 = document.getElementById('loadbg');
+                    t1.style.display="none";
+            }
+        </script>
+        <body onload="test()">
+            <div class="loadbg" id="loadbg">
+                <div class="load" id="load">
+                    <div class='loader'></div>
+                    <div class="loadfont">loading...</div>
+                </div>
+            </div>
             <div class="title">
                 <a href="https://missdin.github.io/DEL-motion-graphic/mg.html" class="label">
                     motion graphic
